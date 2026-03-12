@@ -44,21 +44,21 @@ const styles: CustomStyleRulesCallback<CssRules> = (theme: ArvadosTheme) => ({
     header: {
         paddingTop: theme.spacing(1),
         paddingBottom: theme.spacing(1),
+        paddingRight: theme.spacing(1),
         display: 'flex',
         flexDirection: 'row',
         alignItems: 'center',
         justifyContent: 'space-between',
-        paddingRight: '320px',
     },
     namePlate: {
         display: 'flex',
         paddingTop: theme.spacing(1),
         paddingLeft: theme.spacing(1),
+        flexShrink: 0,
     },
     toolbar: {
-        position: 'fixed',
-        right: theme.spacing(4),
-        zIndex: 1000,
+        marginTop: `-${theme.spacing(1)}`,
+        marginBottom: `-${theme.spacing(1)}`,
     },
     content: {
         padding: theme.spacing(0),
@@ -123,7 +123,7 @@ export const ProcessLogsCard = withStyles(styles)(
                                 </Typography>
                                 </div>
                                 <div className={classes.toolbar}>
-                            <Grid container direction='row' alignItems='center'>
+                            <Grid container direction='row' alignItems='center' justifyContent='flex-end'>
                                 <Grid item>
                                     <ProcessLogForm selectedFilter={selectedFilter} filters={filters} onChange={onLogFilterChange} />
                                 </Grid>
