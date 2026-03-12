@@ -48,18 +48,14 @@ const styles: CustomStyleRulesCallback<CssRules> = (theme: ArvadosTheme) => ({
         flexDirection: 'row',
         alignItems: 'center',
         justifyContent: 'space-between',
-        paddingRight: '320px',
+        flexWrap: 'wrap',
     },
     namePlate: {
         display: 'flex',
         paddingTop: theme.spacing(1),
         paddingLeft: theme.spacing(1),
     },
-    toolbar: {
-        position: 'fixed',
-        right: theme.spacing(4),
-        zIndex: 1000,
-    },
+    toolbar: {},
     content: {
         padding: theme.spacing(0),
         height: '100%',
