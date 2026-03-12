@@ -59,7 +59,6 @@ const styles: CustomStyleRulesCallback<CssRules> = (theme: ArvadosTheme) => ({
     toolbar: {
         marginTop: `-${theme.spacing(1)}`,
         marginBottom: `-${theme.spacing(1)}`,
-        marginRight: `-${theme.spacing(1)}`,
     },
     content: {
         padding: theme.spacing(0),
