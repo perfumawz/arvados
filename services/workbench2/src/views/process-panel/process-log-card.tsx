@@ -42,6 +42,8 @@ const styles: CustomStyleRulesCallback<CssRules> = (theme: ArvadosTheme) => ({
         height: '100%',
     },
     header: {
+        paddingTop: theme.spacing(1),
+        paddingBottom: theme.spacing(1),
         display: 'flex',
         flexDirection: 'row',
         alignItems: 'center',
@@ -53,7 +55,11 @@ const styles: CustomStyleRulesCallback<CssRules> = (theme: ArvadosTheme) => ({
         paddingLeft: theme.spacing(1),
         flexShrink: 0,
     },
-    toolbar: {},
+    toolbar: {
+        marginTop: -theme.spacing(1),
+        marginBottom: -theme.spacing(1),
+        marginRight: -theme.spacing(1),
+    },
     content: {
         padding: theme.spacing(0),
         height: '100%',
